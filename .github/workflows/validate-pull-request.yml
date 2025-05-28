@@ -1,0 +1,9 @@
+name: Pull Request Validation
+run-name: Validating PR from ${{ github.head_ref }} into ${{ github.base_ref }} for @${{ github.actor }}
+on:
+    pull_request:
+jobs:
+  validate-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
