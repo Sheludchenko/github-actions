@@ -4,6 +4,4 @@ on:
     pull_request:
 jobs:
   validate-pull-request:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    uses: ./.github/workflows/build.yml
