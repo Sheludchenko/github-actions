@@ -4,4 +4,4 @@ on:
     pull_request:
 jobs:
   validate-pull-request:
-    uses: ./.github/workflows/build.yml
+    uses: ./.github/workflows/_template-build.yml
